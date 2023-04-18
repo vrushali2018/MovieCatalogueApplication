@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Hvh-vW-bVa" customClass="SimilarResultsCollectionViewCell" customModule="MovieCatalogueApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="133" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YoS-pG-PFv">
+                <rect key="frame" x="0.0" y="0.0" width="133" height="143"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_icon" translatesAutoresizingMaskIntoConstraints="NO" id="ocq-d3-edZ">
+                        <rect key="frame" x="0.0" y="0.0" width="133" height="143"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8gx-cw-m0r">
+                        <rect key="frame" x="5" y="123.66666666666667" width="123" height="14.333333333333329"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="8gx-cw-m0r" secondAttribute="trailing" constant="5" id="DmU-TT-aVJ"/>
+                    <constraint firstItem="ocq-d3-edZ" firstAttribute="top" secondItem="YoS-pG-PFv" secondAttribute="top" id="Fbz-z6-shY"/>
+                    <constraint firstItem="8gx-cw-m0r" firstAttribute="leading" secondItem="YoS-pG-PFv" secondAttribute="leading" constant="5" id="dhL-Q4-KIe"/>
+                    <constraint firstItem="ocq-d3-edZ" firstAttribute="leading" secondItem="YoS-pG-PFv" secondAttribute="leading" id="f3w-aR-W99"/>
+                    <constraint firstAttribute="trailing" secondItem="ocq-d3-edZ" secondAttribute="trailing" id="iYA-yo-bZv"/>
+                    <constraint firstAttribute="bottom" secondItem="ocq-d3-edZ" secondAttribute="bottom" id="jIj-yx-fft"/>
+                    <constraint firstAttribute="bottom" secondItem="8gx-cw-m0r" secondAttribute="bottom" constant="5" id="o0k-sT-Kkf"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="133" height="143"/>
+            <connections>
+                <outlet property="imgView" destination="ocq-d3-edZ" id="2gG-op-eQv"/>
+                <outlet property="nameLbl" destination="8gx-cw-m0r" id="hGb-zD-VPW"/>
+            </connections>
+            <point key="canvasLocation" x="106.10687022900763" y="-49.647887323943664"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder_icon" width="512" height="512"/>
+    </resources>
+</document>
