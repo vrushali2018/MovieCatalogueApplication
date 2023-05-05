@@ -133,16 +133,17 @@ extension MovieDetailViewController: UITableViewDelegate, UITableViewDataSource 
             cell.descTitleLbl.text = self.movieDetailsArr?.overview
             cell.dateLbl.text = self.movieDetailsArr?.releaseDate
             cell.cityLbl.text = self.cityStr
+            cell.voteAvgCountLbl.text = "\(self.movieDetailsArr?.voteAverage ?? 0.0)/10"
             
             let backImgEndURL = movieDetailsArr?.backdropPath ?? ""
             let posterImgEndURL = movieDetailsArr?.posterPath ?? ""
             let imgBaseURL = "https://image.tmdb.org/t/p/original/"
             let backImgURL = imgBaseURL + backImgEndURL
             let posterImgURL = imgBaseURL + posterImgEndURL
-            cell.backImg.sd_setImage(with: URL(string: backImgURL), placeholderImage: UIImage(named: "User.png"))
+            cell.backImg.sd_setImage(with: URL(string: backImgURL), placeholderImage: UIImage(named: "placeholder_icon.png"))
             cell.backImg.sd_imageIndicator = SDWebImageActivityIndicator.gray
             cell.posterImg.sd_imageIndicator = SDWebImageActivityIndicator.gray
-            cell.posterImg.sd_setImage(with: URL(string: posterImgURL), placeholderImage: UIImage(named: "User.png"))
+            cell.posterImg.sd_setImage(with: URL(string: posterImgURL), placeholderImage: UIImage(named: "placeholder_icon.png"))
         
            // cell.cityLbl.text = self.movieDetailsArr
             

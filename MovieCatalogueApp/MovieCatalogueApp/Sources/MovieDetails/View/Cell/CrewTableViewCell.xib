@@ -18,10 +18,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fuQ-wo-sjR">
-                        <rect key="frame" x="0.0" y="10.000000000000007" width="320" height="115.66666666666669"/>
+                        <rect key="frame" x="0.0" y="10" width="320" height="139"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="mvP-db-SWb">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="115.66666666666667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="139"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ECI-xQ-5ti">
                                     <size key="itemSize" width="128" height="128"/>
@@ -37,7 +37,7 @@
                             <constraint firstItem="mvP-db-SWb" firstAttribute="top" secondItem="fuQ-wo-sjR" secondAttribute="top" id="JBh-Wj-Ov5"/>
                             <constraint firstAttribute="trailing" secondItem="mvP-db-SWb" secondAttribute="trailing" id="Myu-Sl-CS0"/>
                             <constraint firstItem="mvP-db-SWb" firstAttribute="leading" secondItem="fuQ-wo-sjR" secondAttribute="leading" id="uXS-4i-bkC"/>
-                            <constraint firstAttribute="height" constant="115.67" id="z1u-UQ-365"/>
+                            <constraint firstAttribute="height" constant="139" id="z1u-UQ-365"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -15,9 +15,6 @@ protocol MovieDetailsDelegate {
 
 class MovieDetailsViewModel: MovieDetailsDelegate {
     
-    
-    
-    
     // MARK: - Variable Declarations
     var movieService: MovieDetailsService?
     var movieDetailsArr: MovieDetailsModel?
